@@ -1,0 +1,668 @@
+body {
+  box-sizing: border-box;
+}
+.box {
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  background-color: rgb(245, 238, 230);
+  border-style: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.493);
+  position: relative;
+}
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  animation-name: box;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes box {
+  0% {
+    background-color: rgba(74, 129, 74, 0.5);
+  }
+  25% {
+    background-color: rgba(247, 247, 160, 0.616);
+  }
+  50% {
+    background-color: rgba(148, 148, 248, 0.493);
+  }
+  75% {
+    background-color: rgba(236, 141, 193, 0.445);
+  }
+  100% {
+    background-color: rgb(120, 177, 120);
+  }
+}
+.animation {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  animation-name: samim;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  transform: rotate(30deg);
+}
+
+@keyframes samim {
+  0% {
+    background-color: red;
+    left: 15px;
+    top: 15px;
+  }
+  25% {
+    background-color: yellow;
+    left: 460px;
+    top: 15px;
+  }
+  50% {
+    background-color: blue;
+    left: 460px;
+    top: 460px;
+  }
+  75% {
+    background-color: green;
+    left: 15px;
+    top: 460px;
+  }
+  100% {
+    background-color: red;
+    left: 15px;
+    top: 15px;
+  }
+}
+
+.animation2 {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: samim1;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes samim1 {
+  0% {
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+  }
+  25% {
+    background-color: yellow;
+    left: 400px;
+    top: 100px;
+  }
+  50% {
+    background-color: red;
+    left: 400px;
+    top: 400px;
+  }
+  75% {
+    background-color: green;
+    left: 100px;
+    top: 400px;
+  }
+  100% {
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+  }
+}
+
+/* ''''''''''''''''''''''''''''''' */
+.animation3 {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(0, 38, 255);
+  border-radius: 50%;
+  position: absolute;
+  animation-name: samim3;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes samim3 {
+  0% {
+    background-color: blue;left: 0px;top: 0px;}
+  25% {
+    background-color: yellow;left: 485px;top: 0px;}
+  50% {
+    background-color: red;left: 0px;top: 485px;}
+    
+  75% {
+    background-color: green;left: 485px;top: 485px;}
+  100% {
+    background-color: blue;left: 0px;top: 0px;
+  }
+}
+/* ............................... */
+
+
+
+
+
+.container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  margin-top: 30%;
+  justify-content: center;
+  gap: 20px;
+}
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 0px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.r22 {
+  margin-top: 25px;
+}
+.r33 {
+  margin-top: 25px;
+}
+
+/* Animtion Start (r1) */
+
+.r1 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  animation-name: r1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes r1 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: rgb(255, 0, 140);
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+/* r2 */
+.r2 {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  animation-name: r2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes r2 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: rgb(174, 0, 255);
+  }
+  50% {
+    background-color: rgba(158, 228, 47, 0.582);
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: rgb(252, 255, 71);
+  }
+}
+
+/* r3 */
+.r3 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(172, 117, 15);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  animation-name: r3;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform: rotate(45deg);
+}
+
+@keyframes r3 {
+  0% {
+    background-color: yellow;
+  }
+  25% {
+    background-color: rgb(0, 47, 255);
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: rgb(0, 255, 221);
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+/* r4 */
+.r4 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(172, 117, 15);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  animation-name: r4;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes r4 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: rgb(174, 0, 255);
+  }
+  50% {
+    background-color: rgba(158, 228, 47, 0.582);
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: rgb(252, 255, 71);
+  }
+}
+/* r5 */
+.r5 {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  animation-name: r5;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes r5 {
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: rgb(174, 0, 255);
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+/* r6 */
+
+.r6 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(172, 117, 15);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  animation-name: r6;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes r6 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: rgb(174, 0, 255);
+  }
+  50% {
+    background-color: rgba(158, 228, 47, 0.582);
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: rgb(252, 255, 71);
+  }
+}
+
+/* r7 */
+.r7 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(172, 117, 15);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  animation-name: r7;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes r7 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: rgb(255, 0, 140);
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+/* r8 */
+.r8 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(172, 117, 15);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  animation-name: r8;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes r8 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: rgb(174, 0, 255);
+  }
+  50% {
+    background-color: rgba(158, 228, 47, 0.582);
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: rgb(252, 255, 71);
+  }
+}
+
+/* r9 */
+.r9 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(172, 117, 15);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  animation-name: r9;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform: rotate(45deg);
+}
+
+@keyframes r9 {
+  0% {
+    background-color: yellow;
+  }
+  25% {
+    background-color: rgb(0, 47, 255);
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: rgb(0, 255, 221);
+  }
+  100% {
+    background-color: red;
+  }
+}
+/* animation  end */
+
+/* transition r1 start */
+
+.r1 {
+  color: rgb(243, 148, 148);
+  background-color: rgb(243, 148, 148);
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  transition-property: all;
+  transition-delay: 0.3s;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.r1:hover {
+  background-color: rgb(47, 108, 241);
+  transform: rotate(220deg);
+  /* border-radius: 50%; */
+  border-style: none;
+  box-shadow: 1px 1px 10px red;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+/* r1 End */
+
+/* r2 start */
+.r2 {
+  color: rgb(243, 148, 148);
+  background-color: rgb(243, 148, 148);
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  transition-property: all;
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+.r2:hover {
+  background-color: rgba(186, 47, 241, 0.925);
+  transform: rotate(-180deg);
+  border-style: none;
+  box-shadow: 1px 1px 10px red;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+/* r2 End */
+
+/* r3 Start */
+.r3 {
+  color: rgb(243, 148, 148);
+  background-color: rgb(243, 148, 148);
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  transition-property: all;
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+.r3:hover {
+  background-color: rgba(47, 241, 95, 0.925);
+  transform: rotate(220deg);
+  /* border-radius: 50%; */
+  border-style: none;
+  box-shadow: 1px 1px 10px red;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+/* r3 End */
+
+/* r4 start */
+.r4 {
+  color: rgb(243, 148, 148);
+  background-color: rgb(243, 148, 148);
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  transition-property: all;
+  transition-delay: 0.3s;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.r4:hover {
+  background-color: rgb(47, 108, 241);
+  transform: rotate(220deg);
+  /* border-radius: 50%; */
+  border-style: none;
+  box-shadow: 1px 1px 10px red;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+/* r4 End */
+
+/* r5 start */
+.r5 {
+  color: rgb(243, 148, 148);
+  background-color: rgb(243, 148, 148);
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  transition-property: all;
+  transition-delay: 0.3s;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.r5:hover {
+  width: 60px;
+  height: 70px;
+  background-color: rgb(47, 108, 241);
+  transform: rotate(360deg);
+  border-radius: 50%;
+  border-style: none;
+  box-shadow: 1px 1px 10px red;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+/* r5 End */
+
+/* r6 start */
+.r6 {
+  color: rgb(243, 148, 148);
+  background-color: rgb(243, 148, 148);
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  transition-property: all;
+  transition-delay: 0.3s;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.r6:hover {
+  background-color: rgb(47, 108, 241);
+  transform: rotate(220deg);
+  /* border-radius: 50%; */
+  border-style: none;
+  box-shadow: 1px 1px 10px red;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+/* r6 End */
+
+/* r7 Start */
+.r7 {
+  color: rgb(243, 148, 148);
+  background-color: rgb(243, 148, 148);
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  transition-property: all;
+  transition-delay: 0.3s;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.r7:hover {
+  background-color: rgb(47, 108, 241);
+  transform: rotate(220deg);
+  /* border-radius: 50%; */
+  border-style: none;
+  box-shadow: 1px 1px 10px red;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+/* r7 End */
+
+/* r8 start */
+.r8 {
+  color: rgb(243, 148, 148);
+  background-color: rgb(243, 148, 148);
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  transition-property: all;
+  transition-delay: 0.3s;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.r8:hover {
+  background-color: rgb(47, 108, 241);
+  transform: rotate(-360deg);
+  /* border-radius: 50%; */
+  border-style: none;
+  box-shadow: 1px 1px 10px red;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+/* r8 End */
+
+/* r9 Start */
+
+.r9 {
+  color: rgb(243, 148, 148);
+  background-color: rgb(243, 148, 148);
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  transition-property: all;
+  transition-delay: 0.2s;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+.r9:hover {
+  background-color: rgba(47, 241, 95, 0.925);
+  transform: rotate(220deg);
+  /* border-radius: 50%; */
+  border-style: none;
+  box-shadow: 1px 1px 10px red;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+/* r9 Enad */
